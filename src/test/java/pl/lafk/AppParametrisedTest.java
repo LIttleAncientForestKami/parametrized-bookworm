@@ -19,7 +19,8 @@ public class AppParametrisedTest {
         return new Object[][]{
                 {"Cedric", 36},
                 {"Anne", 37},
-                {"Tommy", 8}
+                {"Tommy", 8},
+                {"Seoman", 18} // who remembers Seoman Snowlock?
         };
     }
 
