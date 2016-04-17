@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 /**
  * Data providers are very useful for parametrised tests.
@@ -37,7 +38,9 @@ public class AppParametrisedTest {
 
     @Test(dataProvider = "nameAndAge")
     public void verifyData1LastTime(String name, Integer age) {
-        Assert.assertTrue(age > 18, name + " not of age in Europe!");
-        Assert.assertTrue(age > 21, name + " not of age in US!");
+        SoftAssert soft = new SoftAssert();
+        soft.assertTrue(age > 18, name + " not of age in Europe!");
+        soft.assertTrue(age > 21, name + " not of age in US!");
+        soft.assertAll();
     }
 }
