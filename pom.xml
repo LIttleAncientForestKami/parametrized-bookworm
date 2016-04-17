@@ -17,7 +17,7 @@
 
     <!-- Versions of dependencies and plugins follow -->
     <!-- mvn versions:display-property-updates to see if anything's new -->
-    <testngVer>6.9.10</testngVer>
+    <testngVer>6.9.9</testngVer>
 
     <!-- plugins -->
     <surefireVer>2.19.1</surefireVer>
